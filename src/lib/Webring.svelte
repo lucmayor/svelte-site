@@ -15,8 +15,26 @@
 
 <style>
     footer {
-        align-items: end;
+        text-align: right;
         margin-left: auto;
         margin-right: 0;
+        font-style: italic;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    a {
+    font-weight: 200;
+    color: #23242b;
+    text-decoration: inherit;
+    }
+
+    a:hover {
+    color: white;
     }
 </style>
