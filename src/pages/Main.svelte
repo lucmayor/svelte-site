@@ -3,7 +3,7 @@
 </script>
 
 <Page>
-    <p>wip</p>
+    wip
 </Page>
 
 <style>

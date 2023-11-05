@@ -2,6 +2,7 @@
 
   import Counter from './lib/Counter.svelte';
   import Webring from './lib/Webring.svelte';
+  import Taskbar from './lib/Taskbar.svelte';
 
   import Main from './pages/Main.svelte';
   import About from './pages/About.svelte';
@@ -9,7 +10,7 @@
   import Radio from './pages/Radio.svelte';
 
 
-  let page;
+  let page = Main;
 
   
 </script>
@@ -19,7 +20,9 @@
 </svelte:head>
 
 <main>
-  
+  <Taskbar />
+
+  <div class="the"><svelte:component this={page} /></div>
   <Webring />
 </main>
 
