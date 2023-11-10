@@ -12,7 +12,9 @@
 
   let page = Main;
 
-  
+  function swap(swapTo) {
+    page = swapTo;
+  }
 </script>
 
 <svelte:head>
@@ -20,9 +22,7 @@
 </svelte:head>
 
 <main>
-  <Taskbar />
-
-  <div class="the"><svelte:component this={page} /></div>
+  <svelte:component this={page} />
   <Webring />
 </main>
 

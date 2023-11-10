@@ -15,6 +15,8 @@
 
 <style>
     footer {
+        font-family: "Redaction 35";
+        font-size: 11px;
         text-align: right;
         margin-left: auto;
         margin-right: 0;
