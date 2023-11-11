@@ -35,4 +35,8 @@ a:hover {
   font-family: "Redaction 35";
   src: url("/Redaction35-Regular.woff2") format("woff2");
   font-display: auto;
+
+  font-family: "Redaction 50";
+  src: url("/Redaction50-Regular.woff2") format("woff2");
+  font-display: auto;
 }

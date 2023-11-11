@@ -21,9 +21,6 @@
         margin-left: auto;
         margin-right: 0;
         font-style: italic;
-        position: absolute;
-        bottom: 0;
-        right: 0;
     }
 
     p {

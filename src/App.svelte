@@ -1,6 +1,5 @@
 <script>
 
-  import Counter from './lib/Counter.svelte';
   import Webring from './lib/Webring.svelte';
   import Taskbar from './lib/Taskbar.svelte';
 
@@ -9,12 +8,23 @@
   import Projects from './pages/Projects.svelte';
   import Radio from './pages/Radio.svelte';
 
+  import router from "page.js";
 
-  let page = Main;
+  let page;
+  let pageName = "main";
 
-  function swap(swapTo) {
-    page = swapTo;
-  }
+  router("/", () => (
+    page = Main, pageName = "main"
+  ));
+  router("/about", () => (
+    page = About, pageName = "about"
+  ));
+  router("/projects", () => (
+    page = Projects, pageName = "projects"
+  ));
+  router("/radio", () => (
+    page = Radio, pageName = "radio"
+  ));
 </script>
 
 <svelte:head>
@@ -22,10 +32,50 @@
 </svelte:head>
 
 <main>
-  <svelte:component this={page} />
+  <h1>
+    lovepill
+  </h1>
+  <h2>
+    [{pageName}]
+  </h2>
+  <hr />
+  <container>
+    <Taskbar />
+    <div class="divider"></div>
+    <svelte:component this={page} />
+  </container>
   <Webring />
 </main>
 
 <style>
-  
+  hr {
+    border: none;
+    border-top: 1px dotted white;
+    max-width: 800px;
+  }
+
+  h1 {
+    font-family: "Redaction 50";
+    font-size: 35px;
+    display: inline;
+  }
+
+  h2 {
+    font-family: "Redaction 30";
+    font-size: 20px;
+    display: inline;
+  }
+
+  .divider {
+    border: none;
+    border-left: 1px dotted white;
+    width: 50%;
+    min-height: 600px;
+    max-width: 1px;
+  }
+
+  container {
+    display: flex;
+    justify-content: center;
+  }
 </style>
