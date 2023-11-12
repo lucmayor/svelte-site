@@ -4,12 +4,12 @@
 
 <footer>
     <p>
-        This website is part of the "<a href="https://staydown.money">staydown.money</a>" webring...
+        This website is part of the "<a href="https://staydown.money/">staydown.money</a>" webring...
     </p>
     <p>
         <a href="https://staydown.money/wr?prev=https://lovepill.moe/">&lt; back</a>
         <a href="https://staydown.money/wr?random=https://lovepill.moe/">random</a>
-        <a href="https://staydown.money/wr?next=https://lovepill.moe">next &gt;</a>
+        <a href="https://staydown.money/wr?next=https://lovepill.moe/">next &gt;</a>
     </p>
 </footer>
 
