@@ -25,10 +25,12 @@
   router("/radio", () => (
     page = Radio, pageName = "radio"
   ));
+  router.start();
 </script>
 
 <svelte:head>
   <title>lovepill</title>
+  <link rel="icon" href="pixelstar-pixel.gif" type="image/gif">
 </svelte:head>
 
 <main>
@@ -43,6 +45,9 @@
     <Taskbar />
     <div class="divider"></div>
     <svelte:component this={page} />
+    <!-- <div class="wrapper">
+      <svelte:component this={page} />
+    </div> -->
   </container>
   <Webring />
 </main>
@@ -78,4 +83,17 @@
     display: flex;
     justify-content: center;
   }
+
+  /* .wrapper {
+    grid-area: main;
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 1;
+    flex-grow: 1;
+  }
+
+  .wrapper > :global(*) {
+    grid-row: 1;
+    grid-column: 1;
+  } */
 </style>

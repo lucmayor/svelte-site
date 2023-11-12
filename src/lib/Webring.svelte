@@ -7,9 +7,9 @@
         This website is part of the "<a href="https://staydown.money">staydown.money</a>" webring...
     </p>
     <p>
-        <a href="https://staydown.money/wr?prev=https://lovepill.moe/">back</a>
-        <a href="https://staydown.money/wr?random=https://lovepill.moe/">?</a>
-        <a href="https://staydown.money/wr?next=https://lovepill.moe">next</a>
+        <a href="https://staydown.money/wr?prev=https://lovepill.moe/">&lt; back</a>
+        <a href="https://staydown.money/wr?random=https://lovepill.moe/">random</a>
+        <a href="https://staydown.money/wr?next=https://lovepill.moe">next &gt;</a>
     </p>
 </footer>
 
@@ -29,11 +29,11 @@
 
     a {
     font-weight: 200;
-    color: #23242b;
+    color: #f09a9a;
     text-decoration: inherit;
     }
 
     a:hover {
-    color: white;
+    color: #f09a9a;
     }
 </style>

@@ -3,7 +3,7 @@
 </script>
 
 <Page>
-    <p>wip</p>
+    <p>not much here, unfortunately... coming soon (?)</p>
 </Page>
 
 <style>

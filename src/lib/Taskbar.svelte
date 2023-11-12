@@ -1,6 +1,9 @@
 <taskbar>
     <div class="blockOne">
         <img src="/overlay_transparent.png" alt="logo" width="300" height="300">
+        <div>luc</div>
+        <div class="g">they/he - 21</div>
+
         <a class="menuOption" href="/">main</a>
         <a class="menuOption" href="/about">about</a>
         <a class="menuOption" href="/projects">projects</a>
@@ -11,6 +14,10 @@
 <style>
     img {
         margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .g {
         margin-bottom: 20px;
     }
 
