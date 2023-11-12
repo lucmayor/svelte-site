@@ -12,6 +12,12 @@
 </taskbar>
 
 <style>
+    taskbar {
+        border-right: 1px dotted white;
+        height: 37.5rem;
+        align-items: center;
+    }
+
     img {
         margin-top: 20px;
         margin-bottom: 20px;

@@ -34,29 +34,78 @@
 </svelte:head>
 
 <main>
-  <h1>
-    lovepill
-  </h1>
-  <h2>
-    [{pageName}]
-  </h2>
+  <nav>
+    <h1>lovepill</h1>
+    <h2>
+      [{pageName}]
+    </h2>
+  </nav>
   <hr />
-  <container>
+  <div class="core">
     <Taskbar />
-    <div class="divider"></div>
-    <svelte:component this={page} />
-    <!-- <div class="wrapper">
-      <svelte:component this={page} />
-    </div> -->
-  </container>
+    <div class="content">
+      <div class="wrapper">
+        <svelte:component this={page} />
+      </div>
+    </div>
+  </div>
   <Webring />
 </main>
 
 <style>
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: min-content;
+  }
+  
+  main {
+    margin-top: 2rem;
+    width: 80rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .core {
+    height: 37.5rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .wrapper {
+    grid-area: main;
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 1;
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .wrapper > :global(*) {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
   hr {
     border: none;
     border-top: 1px dotted white;
-    max-width: 800px;
+    width: 800px;
   }
 
   h1 {
@@ -70,30 +119,4 @@
     font-size: 20px;
     display: inline;
   }
-
-  .divider {
-    border: none;
-    border-left: 1px dotted white;
-    width: 50%;
-    min-height: 600px;
-    max-width: 1px;
-  }
-
-  container {
-    display: flex;
-    justify-content: center;
-  }
-
-  /* .wrapper {
-    grid-area: main;
-    display: grid;
-    grid-template-rows: 1;
-    grid-template-columns: 1;
-    flex-grow: 1;
-  }
-
-  .wrapper > :global(*) {
-    grid-row: 1;
-    grid-column: 1;
-  } */
 </style>
