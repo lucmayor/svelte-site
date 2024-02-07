@@ -2,7 +2,7 @@
     <div class="blockOne">
         <img src="/overlay_transparent.png" alt="logo" width="300" height="300">
         <div>luc</div>
-        <div class="g">they/he - 21</div>
+        <div class="g">21</div>
 
         <a class="menuOption" href="/">main</a>
         <a class="menuOption" href="/about">about</a>
