@@ -1,5 +1,6 @@
 <script>
 
+  import LatexWebring from './lib/LatexWebring.svelte';
   import Webring from './lib/Webring.svelte';
   import Taskbar from './lib/Taskbar.svelte';
 
@@ -49,7 +50,10 @@
       </div>
     </div>
   </div>
-  <Webring />
+  <div class="webrings">
+    <LatexWebring />
+    <Webring />
+  </div>
 </main>
 
 <style>
@@ -100,6 +104,12 @@
   .wrapper > :global(*) {
     grid-row: 1;
     grid-column: 1;
+  }
+
+  .webrings {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
   }
 
   hr {
