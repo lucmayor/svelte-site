@@ -1,13 +1,12 @@
 <taskbar>
     <div class="blockOne">
         <img src="/overlay_transparent.png" alt="logo" width="300" height="300">
-        <div>luc</div>
-        <div class="g">21</div>
+        <div>BarterBee</div>
+        <div class="g">Group 15 (A01)</div>
 
-        <a class="menuOption" href="/">main</a>
-        <a class="menuOption" href="/about">about</a>
-        <a class="menuOption" href="/projects">projects</a>
-        <a class="menuOption" href="/radio">radio</a>
+        <a class="menuOption" href="/">Overview</a>
+        <a class="menuOption" href="/vision">Vision Statement</a>
+        <a class="menuOption" href="/team">Team</a>
     </div>
 </taskbar>
 

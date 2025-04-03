@@ -1,42 +1,35 @@
 <script>
-
-  import LatexWebring from './lib/LatexWebring.svelte';
-  import Webring from './lib/Webring.svelte';
   import Taskbar from './lib/Taskbar.svelte';
 
-  import Main from './pages/Main.svelte';
-  import About from './pages/About.svelte';
-  import Projects from './pages/Projects.svelte';
-  import Radio from './pages/Radio.svelte';
+  import Overview from './pages/Overview.svelte';
+  import Vision from './pages/Vision.svelte';
+  import Team from './pages/Team.svelte';
 
   import router from "page.js";
 
   let page;
-  let pageName = "main";
+  let pageName = "Overview";
 
   router("/", () => (
-    page = Main, pageName = "main"
+    page = Overview, pageName = "Overview"
   ));
-  router("/about", () => (
-    page = About, pageName = "about"
+  router("/team", () => (
+    page = Team, pageName = "Team"
   ));
-  router("/projects", () => (
-    page = Projects, pageName = "projects"
-  ));
-  router("/radio", () => (
-    page = Radio, pageName = "radio"
+  router("/vision", () => (
+    page = Vision, pageName = "Vision Statement"
   ));
   router.start();
 </script>
 
 <svelte:head>
-  <title>lovepill</title>
+  <title>BarterBee</title>
   <link rel="icon" href="pixelstar-pixel.gif" type="image/gif">
 </svelte:head>
 
 <main>
   <nav>
-    <h1>lovepill</h1>
+    <h1>BarterBee</h1>
     <h2>
       [{pageName}]
     </h2>
@@ -49,10 +42,6 @@
         <svelte:component this={page} />
       </div>
     </div>
-  </div>
-  <div class="webrings">
-    <LatexWebring />
-    <Webring />
   </div>
 </main>
 
@@ -104,12 +93,6 @@
   .wrapper > :global(*) {
     grid-row: 1;
     grid-column: 1;
-  }
-
-  .webrings {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
   }
 
   hr {
