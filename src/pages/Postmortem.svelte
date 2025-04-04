@@ -3,7 +3,7 @@
 </script>
 
 <Page>
-    <p>not much here, unfortunately... coming soon (?)</p>
+    
 </Page>
 
 <style>

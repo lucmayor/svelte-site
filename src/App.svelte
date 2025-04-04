@@ -4,6 +4,7 @@
   import Overview from './pages/Overview.svelte';
   import Vision from './pages/Vision.svelte';
   import Team from './pages/Team.svelte';
+  import Postmortem from './pages/Postmortem.svelte';
 
   import router from "page.js";
 
@@ -19,12 +20,15 @@
   router("/vision", () => (
     page = Vision, pageName = "Vision Statement"
   ));
+  router("/postmortem", () => (
+    page = Postmortem, pageName = "Postmortem"
+  ));
   router.start();
 </script>
 
 <svelte:head>
   <title>BarterBee</title>
-  <link rel="icon" href="pixelstar-pixel.gif" type="image/gif">
+  <link rel="icon" href="overlay_transparent.png" type="image/png">
 </svelte:head>
 
 <main>
@@ -97,7 +101,6 @@
 
   hr {
     border: none;
-    border-top: 1px dotted white;
     width: 800px;
   }
 
